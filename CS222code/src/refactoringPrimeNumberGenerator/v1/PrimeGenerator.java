@@ -63,7 +63,7 @@ public class PrimeGenerator {
         int[] primes = new int[count];
         // move the primes into the result
         for (int i = 0, j = 0; i < crossedOut.length; i++) {
-            if (!crossedOut[i]) // if prime
+            if (!crossedOut[i])
                 primes[j++] = i;
         }
         return primes;
@@ -73,7 +73,7 @@ public class PrimeGenerator {
         int count = 0;
         for (int i = 0; i < crossedOut.length; i++) {
             if (!crossedOut[i])
-                count++; // bump count.
+                count++;
         }
         return count;
     }
